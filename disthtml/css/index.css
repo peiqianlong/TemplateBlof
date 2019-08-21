@@ -16,17 +16,9 @@
         position: relative;
     }
     
-    .Phone .header {
-        overflow: hidden;
-    }
-    
     .Blog .header .img {
         height: 600px;
         /* position: relative; */
-    }
-    
-    .Phone .header .img {
-        height: 200px;
     }
     
     .Blog .imglist {
@@ -69,12 +61,6 @@
         border-radius: 50%;
     }
     
-    .Phone .swiper-button-prev {
-        margin-left: 30px;
-        width: 40px;
-        height: 40px;
-    }
-    
     .Blog .swiper-button-next {
         margin-right: 180px;
         width: 60px;
@@ -82,12 +68,6 @@
         background: url(../img/next@2x.png) no-repeat center;
         background-size: 100% 100%;
         border-radius: 50%;
-    }
-    
-    .Phone .swiper-button-next {
-        margin-right: 30px;
-        width: 40px;
-        height: 40px;
     }
     
     .Blog .preview {
@@ -160,13 +140,6 @@
         z-index: 5;
     }
     
-    .Phone .name_menu_content {
-        top: 0;
-        left: 0;
-        transform: translateX(0%);
-        overflow: hidden;
-    }
-    
     .Blog .menu_fiexd .left .tit {
         order: 10;
     }
@@ -197,25 +170,12 @@
         margin-left: 50%;
         transform: translate(-50%);
     }
-    
-    .Phone .name_menu {
-        width: 100%;
-        top: 0;
-        margin-top: 0;
-        border-radius: 0;
-    }
     /* 上划固定头部 */
     
     .Blog .fixed_tit {
         width: 100%;
         border-radius: 0;
         padding: 0 14.7%;
-    }
-    
-    .Phone .fixed_tit {
-        width: 100%;
-        border-radius: 0;
-        padding: 0 34px;
     }
     
     .Blog .menu {
@@ -229,34 +189,9 @@
         display: none
     }
     
-    .Phone .menu .phonemuen {
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin: auto;
-    }
-    
-    .Phone .menu .phonemuen div,
-    .Phone .menu .phonemuen div img {
-        width: 100%;
-        height: 100%;
-    }
-    
     .Blog .menu ul {
         display: flex;
         /* height: 100%; */
-    }
-    
-    .Phone .menu ul {
-        flex-direction: column;
-        position: absolute;
-        top: 64px;
-        background: #fff;
-        right: 0;
-        display: none;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-        border-bottom-left-radius: 2px;
-        /* height: inherit; */
     }
     
     .Blog .menu ul li {
@@ -267,12 +202,6 @@
         color: rgba(101, 101, 101, 0.85);
         line-height: 64px;
         cursor: pointer;
-    }
-    
-    .Phone .menu ul li {
-        margin: 0 6px;
-        height: 35px;
-        line-height: 35px;
     }
     
     .Blog .menu ul .isactive {
@@ -293,21 +222,11 @@
         border-radius: 3px;
     }
     
-    .Phone .menu ul .isactive::after {
-        display: none;
-    }
-    
     .Blog .content {
         width: 75%;
         margin: 0 auto;
         margin-top: 100px;
         display: flex;
-    }
-    
-    .Phone .content {
-        width: 100%;
-        margin: 0;
-        flex-direction: column;
     }
     
     .Blog .content_left {
@@ -316,14 +235,6 @@
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
         border-radius: 4px;
         padding: 34px;
-    }
-    
-    .Phone .content_left {
-        box-shadow: none;
-    }
-    
-    .Phone .content_left {
-        padding: 20px;
     }
     
     .Blog .input_search {
@@ -351,15 +262,6 @@
     
     .Blog .phoneClass {
         display: none;
-    }
-    
-    .Phone .phoneClass {
-        display: block;
-        margin-bottom: 20px;
-    }
-    
-    .Phone .phoneClass .tit {
-        padding-left: 34px;
     }
     /* 图左文字右 */
     
@@ -396,11 +298,6 @@
         /*  */
     }
     
-    .Phone .contenttext_left .con_main_left .img {
-        display: none;
-        /*  */
-    }
-    
     .Blog .contenttext_left .con_main_left .img:hover {
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.36);
     }
@@ -417,10 +314,6 @@
         overflow: hidden;
     }
     
-    .Phone .contenttext_left .con_main_left .text_main {
-        margin-left: 0px;
-    }
-    
     .Blog .contenttext_left .con_main_left .text_main .text_main_tit {
         font-size: 20px;
         font-weight: 800;
@@ -428,17 +321,6 @@
         color: rgba(0, 0, 0, 1);
         opacity: 0.85;
         cursor: pointer;
-    }
-    
-    .Phone .contenttext_left .con_main_left .text_main .text_main_tit {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-    }
-    
-    .Phone br {
-        display: none;
     }
     
     .Blog .contenttext_left .con_main_left .text_main .text_main_tit:hover {
@@ -474,15 +356,20 @@
         color: rgba(0, 0, 0, 0.45);
         float: left;
         opacity: 1;
+        display: block;
+        width: 100%;
     }
     
     .Blog .contenttext_right .con_main_left .img {
         width: 240px;
         overflow: hidden;
-        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.36);
         border-radius: 4px;
         height: 180px;
         order: 2;
+    }
+    
+    .Blog .contenttext_right .con_main_left .img:hover {
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.36);
     }
     
     .Blog .contenttext_right .con_main_left .img img {
@@ -502,6 +389,7 @@
         color: rgba(0, 0, 0, 1);
         text-decoration: underline;
         opacity: 0.85;
+        display: block;
     }
     
     .Blog .contenttext_right .con_main_left .text_main .text_main_con {
@@ -592,15 +480,7 @@
     
     .Blog .phengpage {
         display: none;
-    }
-    
-    .Phone .phengpage {
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .Phone .page {
-        display: none;
+        margin-top: 30px;
     }
     
     .Blog .contn {
@@ -775,24 +655,12 @@
         height: 100%;
     }
     
-    .Phone .content_right {
-        /* display: none; */
-        width: 100%;
-        margin: 0;
-        min-width: none;
-    }
-    
     .Blog .content_right .class {
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
         border-radius: 4px;
         padding: 32px;
         box-sizing: border-box;
         background: #fff;
-    }
-    
-    .Phone .content_right .class {
-        padding: 15px;
-        box-shadow: none;
     }
     
     .Blog .class h2 {
@@ -833,10 +701,6 @@
     
     .Blog .guidang {
         margin-top: 28px;
-    }
-    
-    .Phone .guidang {
-        margin-top: 0px;
     }
     
     .Blog .guidang dl dt {
@@ -910,11 +774,6 @@
         opacity: 0.85;
     }
     
-    .Phone .maincon h4 {
-        font-size: 20px;
-        line-height: 20px;
-    }
-    
     .Blog .tag {
         display: flex;
         margin: 12px 0 24px 0;
@@ -978,14 +837,29 @@
         color: rgba(0, 0, 0, 0.85);
     }
     
-    .Blog .imgtit {
+    .Blog .imglogo {
         width: 160px;
         height: 160px;
+        overflow: hidden;
         position: absolute;
         border-radius: 50%;
         left: 50%;
         margin-left: -80px;
         top: 230px;
+        z-index: 100;
+        background: #fff;
+    }
+    
+    .Blog .imgtit {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Blog .phonelogo {
+        display: none;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
     }
     
     .Blog .lablelist {
@@ -1217,4 +1091,160 @@
         position: relative;
         margin-left: 0px;
         transition: all 300ms ease;
+    }
+    
+    @media screen and (max-width:700px) {
+        .Phone .header {
+            overflow: hidden;
+        }
+        .Phone .header .img {
+            height: 200px;
+        }
+        .Phone .swiper-button-prev {
+            margin-left: 30px;
+            width: 40px;
+            height: 40px;
+        }
+        .Phone .swiper-button-next {
+            margin-right: 30px;
+            width: 40px;
+            height: 40px;
+        }
+        .Phone .name_menu_content {
+            top: 0;
+            left: 0;
+            transform: translateX(0%);
+            overflow: hidden;
+        }
+        .Phone .name_menu {
+            width: 100%;
+            top: 0;
+            margin-top: 0;
+            border-radius: 0;
+        }
+        .Phone .fixed_tit {
+            width: 100%;
+            border-radius: 0;
+            padding: 0 34px;
+        }
+        .Phone .menu .phonemuen {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+        }
+        .Phone .menu .phonemuen div,
+        .Phone .menu .phonemuen div img {
+            width: 100%;
+            height: 100%;
+        }
+        .Phone .menu ul li {
+            margin: 0 6px;
+            height: 35px;
+            line-height: 35px;
+        }
+        .Phone .menu ul .isactive::after {
+            display: none;
+        }
+        .Phone .content {
+            width: 100%;
+            margin: 0;
+            flex-direction: column;
+        }
+        .Phone .content_left {
+            box-shadow: none;
+        }
+        .Phone .content_left {
+            padding: 20px;
+        }
+        .Phone .phoneClass {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .Phone .phoneClass .tit {
+            padding-left: 34px;
+        }
+        .Phone .contenttext_left .con_main_left .img {
+            display: none;
+            /*  */
+        }
+        .Phone .menu ul {
+            flex-direction: column;
+            position: absolute;
+            top: 64px;
+            background: #fff;
+            right: 0;
+            display: none;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            border-bottom-left-radius: 2px;
+            /* height: inherit; */
+        }
+        .Phone .contenttext_left .con_main_left .text_main {
+            margin-left: 0px;
+        }
+        .Phone .contenttext_left .con_main_left .text_main .text_main_tit {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+        .Phone br {
+            display: none;
+        }
+        .Phone .contenttext_right .con_main_left .img {
+            display: none;
+        }
+        .Phone .contenttext_right .con_main_left .text_main {
+            margin-right: 0px;
+        }
+        .Phone .contenttext_right .con_main_left .text_main .text_main_tit {
+            /* display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden; */
+        }
+        .Phone .phengpage {
+            display: flex;
+            justify-content: space-around;
+        }
+        .Phone .page {
+            display: none;
+        }
+        .Phone .content_right {
+            /* display: none; */
+            width: 100%;
+            margin: 0;
+            min-width: none;
+        }
+        .Phone .content_right .class {
+            padding: 15px;
+            box-shadow: none;
+        }
+        .Phone .guidang {
+            margin-top: 0px;
+        }
+        .Phone .maincon h4 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .Phone .imglogo {
+            display: none;
+        }
+        .Phone .phonelogo {
+            display: block;
+            margin-left: 14px;
+            background: #eee;
+        }
+        .Phone .content .center .phonelogo {
+            margin: 0 auto;
+        }
+        .Phone .content .center .lablelist span:nth-child(1) {
+            width: 45%;
+        }
+        .Phone .taubs .swiper-slide,
+        .Phone .taubs-1 .swiper-slide,
+        .Phone .taubs-2 .swiper-slide,
+        .Phone .taubs-3 .swiper-slide {
+            display: none;
+        }
     }

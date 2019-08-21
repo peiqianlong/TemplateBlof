@@ -8,20 +8,21 @@
             setTimeout(() => {
                 width = $(window).width()
                 trme = null
-            }, 500)
-            if (width < 600) {
-                $("#Blog").addClass("Phone")
-            } else {
-                $("#Blog").removeClass("Phone")
-            }
+            }, 50)
+
+            // if (width < 700) {
+            //     $("#Blog").addClass("Phone")
+            // } else {
+            //     $("#Blog").removeClass("Phone")
+            // }
         }
 
     });
-    if (width < 600) {
-        $("#Blog").addClass("Phone")
-    } else {
-        $("#Blog").removeClass("Phone")
-    }
+    // if (width < 700) {
+    //     $("#Blog").addClass("Phone")
+    // } else {
+    //     $("#Blog").removeClass("Phone")
+    // }
     $(window).scroll(function() {
         if ($("html").scrollTop() > 450) {
             $(".name_menu").addClass("fixed_tit")
@@ -30,3 +31,19 @@
         }
     })
 })()
+
+$(".guidang .list").click(function() {
+    $(this).find("dd").toggle("fast")
+    if ($(this).find("dt").attr("class") == 'up') {
+        $(this).find("dt").removeClass("up")
+        $(this).find("dt").addClass("down")
+    } else {
+        $(this).find("dt").removeClass("down")
+        $(this).find("dt").addClass("up")
+    }
+
+})
+
+$(".phonemuen").click(function() {
+    $(".menu ul").toggle("fast")
+})

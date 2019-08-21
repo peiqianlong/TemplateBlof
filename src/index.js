@@ -18,21 +18,22 @@ $(".page .list").click(function() {
     $(".page .list").removeClass("isactive")
     $(this).addClass("isactive")
 })
-$(".phonemuen").click(function() {
-    $(".menu ul").toggle("fast")
-})
-P.initMathod({
-    params: {
-        elemId: '#Page',
-        total: '200',
-        pageSize: '10'
-    },
-    requestFunction: function() {
-        // P.config.total = parseInt(Math.random() * 10 + 85);//此处模拟总记录变化
-        //TODO ajax异步请求过程,异步获取到的数据总条数赋值给 P.config.total
-        //列表渲染自行处理
-    }
-});
+
+function page() {
+    P.initMathod({
+        params: {
+            elemId: '#Page',
+            total: '200',
+            pageSize: '10'
+        },
+        requestFunction: function() {
+            // P.config.total = parseInt(Math.random() * 10 + 85);//此处模拟总记录变化
+            //TODO ajax异步请求过程,异步获取到的数据总条数赋值给 P.config.total
+            //列表渲染自行处理
+        }
+    });
+
+}
 
 let data = [{
         src: "http://img1.ph.126.net/w6SDxrMo_xKUW62ehhZG8Q==/6619238120095951543.jpg",
@@ -73,31 +74,3 @@ function getInfo(val) {
     })
     $("#data").html(info)
 }
-
-// function openlist(that) {
-
-//     $(".list dd").css("display", "none")
-//     $(".list dt").removeClass("down")
-//     console.log($(that).find("dd").css("display"))
-//     if ($(that).find("dd").css("display") == "block") {
-
-//         $(that).find("dd").css("display", "none")
-//         $(that).find("dt").addClass("up")
-
-//     } else if ($(that).find("dd").css("display") == "none") {
-
-//         $(that).find("dd").css("display", "block")
-//         $(that).find("dt").addClass("down")
-//     }
-// }
-$(".guidang .list").click(function() {
-    $(this).find("dd").toggle("fast")
-    if ($(this).find("dt").attr("class") == 'up') {
-        $(this).find("dt").removeClass("up")
-        $(this).find("dt").addClass("down")
-    } else {
-        $(this).find("dt").removeClass("down")
-        $(this).find("dt").addClass("up")
-    }
-
-})
