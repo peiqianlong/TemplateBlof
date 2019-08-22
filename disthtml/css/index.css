@@ -132,15 +132,11 @@
 
 .Blog .name_menu_content {
     width: 100%;
-    /* top: -150px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative; */
     clear: both;
-    margin-top: -55px;
     z-index: 5;
     margin-bottom: 20px;
     position: relative;
+    background: blue;
 }
 
 .Blog .menu_fiexd .left .tit {
@@ -235,6 +231,8 @@
     width: 75%;
     margin: 0 auto;
     display: flex;
+    position: relative;
+    top: -55px;
 }
 
 .Blog .content_left {
@@ -617,7 +615,7 @@ margin-left      : 50%; */
     min-width: 178px;
     margin-left: 17px;
     position: sticky;
-    top: 92px;
+    top: 0px;
     height: 100%;
 }
 
