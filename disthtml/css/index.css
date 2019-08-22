@@ -138,10 +138,6 @@
     background: blue;
 }
 
-.Blog .name_menu_content .tep:last-child {
-    margin-bottom: 0 !important;
-}
-
 .Blog .menu_fiexd .left .tit {
     order: 10;
 }
