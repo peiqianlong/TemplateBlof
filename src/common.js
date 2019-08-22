@@ -9,20 +9,10 @@
                 width = $(window).width()
                 trme = null
             }, 50)
-
-            // if (width < 700) {
-            //     $("#Blog").addClass("Phone")
-            // } else {
-            //     $("#Blog").removeClass("Phone")
-            // }
         }
 
     });
-    // if (width < 700) {
-    //     $("#Blog").addClass("Phone")
-    // } else {
-    //     $("#Blog").removeClass("Phone")
-    // }
+
     $(window).scroll(function() {
         if ($("html").scrollTop() > 450) {
             $(".name_menu").addClass("fixed_tit")
