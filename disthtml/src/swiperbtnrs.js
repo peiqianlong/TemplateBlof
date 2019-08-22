@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function () {
+$(document).ready(function() {
     var galleryTop = new Swiper('.gallery-top', {
         direction: 'vertical',
         spaceBetween: 10,
@@ -20,7 +20,7 @@ $(document).ready(function () {
                 el: '.gallery-thumbs',
                 direction: 'vertical',
                 spaceBetween: 0,
-                slidesPerView: 1,
+                slidesPerView: 4,
                 loop: true,
                 freeMode: true,
                 loopedSlides: 5, //looped slides should be the same
