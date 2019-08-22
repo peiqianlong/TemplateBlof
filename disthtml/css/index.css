@@ -138,7 +138,7 @@
     background: blue;
 }
 
-.Blog .name_menu_content div:last-child {
+.Blog .name_menu_content .tep:last-child {
     margin-bottom: 0 !important;
 }
 
