@@ -169,7 +169,10 @@
     margin-left: 50%;
     transform: translate(-50%);
 }
+
+
 /* 上划固定头部 */
+
 .Blog #ecsite-section-header {
     display: inline;
 }
@@ -265,6 +268,8 @@
 .Blog .phoneClass {
     display: none;
 }
+
+
 /* 图左文字右 */
 
 .Blog .contenttext_left .con_main_left {
@@ -711,7 +716,7 @@ margin-left      : 50%; */
 }
 
 .Blog .guidang {
-    margin-top: 28px;
+    margin-bottom: 28px;
 }
 
 .Blog .guidang dl dt {
@@ -840,6 +845,7 @@ margin-left      : 50%; */
     margin: 24px 0;
 }
 
+
 /* aboutme页 */
 
 .Blog .about .tit {
@@ -911,6 +917,7 @@ margin-left      : 50%; */
 
 
 /* 居中的 */
+
 .Blog .content .center .tit {
     text-align: center;
 }
@@ -1038,6 +1045,7 @@ margin-left      : 50%; */
 
 
 /* 缩略 */
+
 .Blog .taubs {
     position: absolute;
     /* top     : 0; */
