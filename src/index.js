@@ -70,7 +70,7 @@ getInfo(data);
 function getInfo(val) {
     let info = ""
     val.forEach(function(i) {
-        info += `<div class="con_main_left"><div class="img"><img src="${i.src}" alt="img"></div><div class="text_main" ><span class="time">2019.7.12</span></span><span class="text_main_tit">${i.tit}</span> <br> <span class="text_main_con">${i.main}</span> </div></div>`
+        info += `<div class="con_main_left"><div class="img"><img src="${i.src}" alt="img"></div><div class="text_main" ><span class="time">2019.7.12</span></span><span class="text_main_tit">${i.tit}</span> <span class="text_main_con">${i.main}</span> </div></div>`
     })
     $("#data").html(info)
 }
