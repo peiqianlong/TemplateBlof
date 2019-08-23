@@ -169,6 +169,15 @@
     transform: translate(-50%);
 }
 
+.Blog .left {
+    flex-direction: row-reverse;
+}
+
+.Blog .left .menu {
+    margin-left: -22px;
+    padding-left: 0;
+}
+
 
 /* 上划固定头部 */
 
