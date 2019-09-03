@@ -254,7 +254,7 @@
 }
 
 .Blog .input_search {
-    width: 100%;
+    width: 95%;
     height: 44px;
     background-color: rgba(0, 0, 0, 0.03);
     opacity: 1;
@@ -266,6 +266,8 @@
     background-size: 20px 20px;
     background-position: 98% 50%;
     outline: none;
+    padding-right: 53px;
+    margin-bottom: 30px;
 }
 
 .Blog .input_search::placeholder {
@@ -297,7 +299,7 @@
 .Blog .contenttext_left .time {
     position: absolute;
     right: 0;
-    top: -16px;
+    top: -24px;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -332,9 +334,8 @@
 }
 
 .Blog .contenttext_left .con_main_left .text_main .text_main_tit {
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 800;
-    line-height: 28px;
     color: rgba(0, 0, 0, 1);
     opacity: 0.85;
     cursor: pointer;
@@ -350,9 +351,8 @@
 }
 
 .Blog .contenttext_left .con_main_left .text_main .text_main_con {
-    font-size: 14px;
+    font-size: 32px;
     font-weight: 400;
-    line-height: 20px;
     color: rgba(0, 0, 0, 0.65);
     opacity: 1;
     overflow: hidden;
@@ -662,19 +662,17 @@ margin-left      : 50%; */
 
 .content_right .class ul li span:nth-child(1),
 .Blog dt span:nth-child(1) {
-    font-size: 16px;
+    font-size: 32px;
     font-family: PingFang SC;
     font-weight: 400;
-    line-height: 22px;
     color: rgba(0, 0, 0, 0.85);
 }
 
 .content_right .class ul li span:nth-child(2),
 .Blog dt span:nth-child(2) {
-    font-size: 12px;
+    font-size: 24px;
     font-family: PingFang SC;
     font-weight: 400;
-    line-height: 17px;
     color: rgba(0, 0, 0, 0.65);
 }
 
@@ -684,6 +682,7 @@ margin-left      : 50%; */
 
 .Blog .guidang dl dt {
     position: relative;
+    padding-right: 30px;
 }
 
 .Blog .guidang dl .up::before {
@@ -722,7 +721,6 @@ margin-left      : 50%; */
     font-size: 16px;
     font-family: PingFang SC;
     font-weight: 400;
-    line-height: 22px;
     color: rgba(0, 0, 0, 0.85);
 }
 
@@ -730,7 +728,6 @@ margin-left      : 50%; */
     font-size: 12px;
     font-family: PingFang SC;
     font-weight: 400;
-    line-height: 17px;
     color: rgba(0, 0, 0, 0.65);
 }
 
@@ -849,16 +846,18 @@ margin-left      : 50%; */
     margin: 20px 0;
     margin-bottom: 0;
     display: flex;
+    align-items: center;
 }
 
 .Blog .lablelist span:nth-child(1) {
-    width: 80px;
+    min-width: 80px;
     text-align: right;
     margin-right: 28px;
-    font-size: 16px;
+    font-size: 32px;
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.45);
+    white-space: nowrap;
 }
 
 .Blog .lablelist span:nth-child(2) {
@@ -867,6 +866,7 @@ margin-left      : 50%; */
     font-family: PingFang SC;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.85);
+    vertical-align: middle;
 }
 
 .Blog .jieshao {
